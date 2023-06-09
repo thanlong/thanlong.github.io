@@ -1,0 +1,18 @@
+nav{
+    flex: 1;
+    text-align: center;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: auto;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: #bbb;
+    font-size: 14px;
+}
+nav ul li a:hover{
+    color: red;
+}

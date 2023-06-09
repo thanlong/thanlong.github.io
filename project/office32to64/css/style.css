@@ -1,0 +1,37 @@
+div {
+    display: block;
+}
+
+body {
+    font-size: 0px;
+}
+body {
+    padding: 100px;
+    margin: auto;
+    font-family: 'Noto Serif';
+    font-size: 15px;
+    color: #36393f;
+    background-color: #36393f;
+}
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .parent {
+    margin: auto;
+    background-color: #000;
+    display: flex;
+    height: 80%;
+    width: 80%;
+  }
+   
+  .child {
+    margin: auto;  /* Magic! */
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .infor-contac{
+    margin-left: auto;
+    margin-right: auto;
+
+  }
