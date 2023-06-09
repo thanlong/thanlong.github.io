@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+	<head><style type="text/css" id="alertifyCSS">.alertify-logs>*{padding:12px 24px;color:#fff;box-shadow:0 2px 5px 0 rgba(0,0,0,.2);border-radius:1px}.alertify-logs>*,.alertify-logs>.default{background:rgba(0,0,0,.8)}.alertify-logs>.error{background:rgba(244,67,54,.8)}.alertify-logs>.success{background:rgba(76,175,80,.9)}.alertify{position:fixed;background-color:rgba(0,0,0,.3);left:0;right:0;top:0;bottom:0;width:100%;height:100%;z-index:1}.alertify.hide{opacity:0;pointer-events:none}.alertify,.alertify.show{box-sizing:border-box;transition:all .33s cubic-bezier(.25,.8,.25,1)}.alertify,.alertify *{box-sizing:border-box}.alertify .dialog{padding:12px}.alertify .alert,.alertify .dialog{width:100%;margin:0 auto;position:relative;top:50%;transform:translateY(-50%)}.alertify .alert>*,.alertify .dialog>*{width:400px;max-width:95%;margin:0 auto;text-align:center;padding:12px;background:#fff;box-shadow:0 2px 4px -1px rgba(0,0,0,.14),0 4px 5px 0 rgba(0,0,0,.098),0 1px 10px 0 rgba(0,0,0,.084)}.alertify .alert .msg,.alertify .dialog .msg{padding:12px;margin-bottom:12px;margin:0;text-align:left}.alertify .alert input:not(.form-control),.alertify .dialog input:not(.form-control){margin-bottom:15px;width:100%;font-size:100%;padding:12px}.alertify .alert input:not(.form-control):focus,.alertify .dialog input:not(.form-control):focus{outline-offset:-2px}.alertify .alert nav,.alertify .dialog nav{text-align:right}.alertify .alert nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button),.alertify .dialog nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button){background:transparent;box-sizing:border-box;color:rgba(0,0,0,.87);position:relative;outline:0;border:0;display:inline-block;-ms-flex-align:center;-ms-grid-row-align:center;align-items:center;padding:0 6px;margin:6px 8px;line-height:36px;min-height:36px;white-space:nowrap;min-width:88px;text-align:center;text-transform:uppercase;font-size:14px;text-decoration:none;cursor:pointer;border:1px solid transparent;border-radius:2px}.alertify .alert nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button):active,.alertify .alert nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button):hover,.alertify .dialog nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button):active,.alertify .dialog nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button):hover{background-color:rgba(0,0,0,.05)}.alertify .alert nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button):focus,.alertify .dialog nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button):focus{border:1px solid rgba(0,0,0,.1)}.alertify .alert nav button.btn,.alertify .dialog nav button.btn{margin:6px 4px}.alertify-logs{position:fixed;z-index:1}.alertify-logs.bottom,.alertify-logs:not(.top){bottom:16px}.alertify-logs.left,.alertify-logs:not(.right){left:16px}.alertify-logs.left>*,.alertify-logs:not(.right)>*{float:left;transform:translateZ(0);height:auto}.alertify-logs.left>.show,.alertify-logs:not(.right)>.show{left:0}.alertify-logs.left>*,.alertify-logs.left>.hide,.alertify-logs:not(.right)>*,.alertify-logs:not(.right)>.hide{left:-110%}.alertify-logs.right{right:16px}.alertify-logs.right>*{float:right;transform:translateZ(0)}.alertify-logs.right>.show{right:0;opacity:1}.alertify-logs.right>*,.alertify-logs.right>.hide{right:-110%;opacity:0}.alertify-logs.top{top:0}.alertify-logs>*{box-sizing:border-box;transition:all .4s cubic-bezier(.25,.8,.25,1);position:relative;clear:both;backface-visibility:hidden;perspective:1000;max-height:0;margin:0;padding:0;overflow:hidden;opacity:0;pointer-events:none}.alertify-logs>.show{margin-top:12px;opacity:1;max-height:1000px;padding:12px;pointer-events:auto}</style>
+	<title>Nhan Vo's Project</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="_token" id="token" value="">
+    <meta name="_socket" id="socket" value="6001">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="cache-control" content="max-age=0">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta name="robots" content="index, follow">
+	<meta name="language" content="Vietnamese, English">
+	
+
+
+
+	<!--Favicons-->
+    <link rel="icon" href="/favicons/favicon-16x16.png">
+    
+
+	<!--Modernizr Js-->
+	<!--Color Css-->
+    <link rel="stylesheet" href="./css/1.css">
+    <link rel="stylesheet" href="./css/styles.css">
+  <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/4fe0396af4.js" crossorigin="anonymous"></script>
+
+    
+</head>
+<body>
+	<header>
+    <nav class="navbar">
+    	<div class="navbar-container">
+			<div class="navbar-header">
+				<div class="navbar-brand">
+					<a class="logo" href="https://thanlong.github.io/">THÀNH NHÂN</a>
+				</div>
+				<div class="navbar-menu-toggle" id="navbar-toggle">
+					<i class="icon-menu"></i>
+				</div>
+				
+			</div>
+			<div class="navbar-left" id="navbar-left">
+				
+
+				<div class="navbar-menu ps-container ps-theme-default"  data-ps-id="e6c692ff-e8ab-1db5-6f00-32685b210507">
+					
+	                
+	                <li class="navbar-menu-item"><a href="https://thanlong.github.io/project/study"><i class="icon icon-ribbon"></i> Học Tập</a></li>
+							<li class="navbar-menu-item"><a href="https://thanlong.github.io/project/work"><i class="icon icon-film"></i> CÔNG VIỆC</a></li>
+							<li class="navbar-menu-item"><a href="https://thanlong.github.io/project/other"><i class="icon icon-news"></i> Khác</a></li>
+	                
+				<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div><div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+				<div class="navbar-close">
+					<i class="icon-close"></i>
+				</div>
+			</div>
+			
+		</div>
+    </nav>
+	</header>
+	<div class="container">
+		<div id="sponsor-header" class="banner-masthead hidden"></div>
+			<section class="tray cinema">
+		        <div class="tray-title">
+                    <style type="text/css">
+                        h1{
+                            color: white;
+                            margin:60px;
+                            font-size:50px;
+                            text-shadow:2px 2px 2px red;
+                                                    }
+                    </style>
+                    <h1>POST LIST</h1>
+				</div>
+				<div class="tray-content">
+                                                      
+<div class="tray-item">
+    <a href="https://thanlong.github.io/project/urlshort/?i=MGh0d" target="_blank">
+                <img class="tray-item-thumbnail" src="./img/img-02.jpg" alt="TÀI LIỆU: SINH VIÊN CHUYÊN NGÀNH CNTT">>
+                <div class="tray-item-description">
+                        <span class="tray-item-quality">STUDY</span>
+                                    
+                        <div class="tray-item-title">TÀI LIỆU: SINH VIÊN CHUYÊN NGÀNH CNTT</div>
+					<div class="tray-item-meta-info">
+						<div class="tray-film-views">4.4GB</div>                					
+					</div>
+        
+				</div>
+        
+        
+                <div class="tray-item-play-button">
+            <i class="icon-book"></i>
+        </div>     
+                <div class="tray-item-audio">
+            Documents
+        </div>   
+            </a>
+
+    
+</div>      
+
+<div class="tray-item">
+    <a href="https://thanlong.github.io/project/urlshort/?i=tVHV0" target="_blank">
+                <img class="tray-item-thumbnail" src="./img/img-01.jpg"alt="HƯỚNG DẪN CHƠI GAME WUXIA WORLD">
+                <div class="tray-item-description">
+                        <span class="tray-item-quality">WORK</span>
+                                    <div class="tray-item-title">HƯỚNG DẪN CHƠI GAME WUXIA WORLD</div>
+            					<div class="tray-item-meta-info">
+						<div class="tray-film-views">380MB</div>                					
+					</div>
+        </div>
+        
+        
+                <div class="tray-item-play-button">
+                    <i class="icon-news"></i>
+        </div>
+        
+                <div class="tray-item-audio">
+            Tutorial
+        </div>
+        
+            </a>
+
+    
+</div>                           
+
+<section class="tray tv">
+            <div class="tray-content">
+
+<!-- Item 1 -->
+	<div class="tray-item"> 
+    <a href="https://thanlong.github.io/project/urlshort/?i=0dHBz"  target="_blank">
+                <img class="tray-item-thumbnail" src="./img/vdk.jpg" alt="TÀI LIỆU: MÔN VĐK - CAO THẮNG">
+                <div class="tray-item-description">
+				<span class="tray-item-quality">STUDY</span>
+                                    <div class="tray-item-title">TÀI LIỆU: MÔN VĐK - CAO THẮNG</div>
+									
+            <div class="tray-item-meta-info">
+                <div class="tray-film-views">172MB</div>
+                
+            </div>
+        </div>
+        <div class="tray-item-play-button">
+            <i class="icon-book"></i>
+        </div>     
+        
+        
+                <div class="tray-item-audio">
+            Documents
+        </div>
+        
+            </a>
+
+    
+	</div>    
+	<!-- End item 1 -->
+	<div class="tray-item">
+    <a href="./urlshort/index.html" target="_blank">
+                <img class="tray-item-thumbnail" src="img/urlshort.jpg" alt="Khúc Hòa Tấu Nơi Dị Giới Bắt Đầu Từ Death March">
+                <div class="tray-item-description">
+				<span class="tray-item-quality">WORK</span>
+                                    <div class="tray-item-title">URL SHORTENER</div>
+            
+        </div>
+        <div class="tray-item-play-button">
+            <i class="icon-news"></i>
+        </div>     
+        
+        
+                <div class="tray-item-audio">
+            Mini-project
+        </div>
+        
+            </a>
+
+    
+	</div> 
+                                    
+	<div class="tray-item">
+    <a href="./office32to64/index.html">
+                <img class="tray-item-thumbnail" src="./img/mso-32-64bit.png" alt="1">
+                <div class="tray-item-description">
+				<span class="tray-item-quality">OTHER</span>
+                                    <div class="tray-item-title">CHUYỂN OFFICE 32BIT SANG 64BIT</div>
+            
+        </div>    
+        <div class="tray-item-audio">
+            Tutorial
+        </div>
+        
+            </a>
+
+    
+	</div>                                     
+	
+	<div class="tray-item">
+        <a href="https://thanlong.github.io/sleep/" target="_blank">
+                    <img class="tray-item-thumbnail" src="img/sleep.png" alt="Khúc Hòa Tấu Nơi Dị Giới Bắt Đầu Từ Death March">
+                    <div class="tray-item-description">
+                    <span class="tray-item-quality">OTHER</span>
+                                        <div class="tray-item-title">SLEEP CALCULATOR</div>
+                
+            </div>
+            <div class="tray-item-play-button">
+                <i class="icon-news"></i>
+            </div>     
+            
+            
+                    <div class="tray-item-audio">
+                Mini-project
+            </div>
+            
+                </a>
+    
+        
+        </div>                                    
+
+	<div class="tray-item">
+    <a href="/tinh-than-bien-phan-3">
+                <img class="tray-item-thumbnail" src="./img/000.jpg" alt="1">
+                <div class="tray-item-description">
+				<span class="tray-item-quality">OTHER</span>
+                                    <div class="tray-item-title">ON WORK</div>
+            <div class="tray-item-meta-info">
+                <div class="tray-film-views">...</div>
+                
+                
+            </div>
+        </div>
+        
+        
+        
+                <div class="tray-item-audio">
+            3
+        </div>
+        
+            </a>
+
+    
+	</div>                                      
+
+	<div class="tray-item">
+    <a href="/tinh-than-bien-phan-3">
+                <img class="tray-item-thumbnail" src="./img/000.jpg" alt="1">
+                <div class="tray-item-description">
+				<span class="tray-item-quality">OTHER</span>
+                                    <div class="tray-item-title">ON WORK</div>
+            <div class="tray-item-meta-info">
+                <div class="tray-film-views">...</div>
+                
+                
+            </div>
+        </div>
+        
+        
+        
+                <div class="tray-item-audio">
+            4
+        </div>
+        
+            </a>
+
+    
+	</div>                                       
+
+	<div class="tray-item">
+    <a href="/tinh-than-bien-phan-3">
+                <img class="tray-item-thumbnail" src="./img/000.jpg" alt="1">
+                <div class="tray-item-description">
+				<span class="tray-item-quality">OTHER</span>
+                                    <div class="tray-item-title">ON WORK</div>
+            <div class="tray-item-meta-info">
+                <div class="tray-film-views">...</div>
+                
+                
+            </div>
+        </div>
+        
+        
+        
+                <div class="tray-item-audio">
+            5
+        </div>
+        
+            </a>
+
+    
+	</div>                                        
+
+	<div class="tray-item">
+    <a href="/tinh-than-bien-phan-3">
+                <img class="tray-item-thumbnail" src="./img/000.jpg" alt="1">
+                <div class="tray-item-description">
+				<span class="tray-item-quality">OTHER</span>
+                                    <div class="tray-item-title">ON WORK</div>
+            <div class="tray-item-meta-info">
+                <div class="tray-film-views">...</div>
+                
+                
+            </div>
+        </div>
+        
+        
+        
+                <div class="tray-item-audio">
+            6
+        </div>
+        
+            </a>
+
+    
+	</div>                                      
+
+	                          
+
+			</div>
+        </section>
+
+
+			
+			</section>
+	</div>
+	
+	<!-- /container -->
+	<div class="modal-trailer">
+      <div class="modal-trailer-content">
+        <div class="modal-trailer-close"><i class="icon-close"></i></div>
+        <div class="loading"></div>
+        <div class="modal-player"></div>
+        <div class="modal-info"></div>
+      </div>
+    </div>
+	<div id="sponsor-catfish" class="hidden"></div>
+	<div id="sponsor-balloon" class="hidden"></div>
+	<script type="text/javascript" async src="https://www.google-analytics.com/analytics.js"></script>
+	<script type="text/javascript" src="./js/1.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-80445706-12"></script>
+	<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-80445706-12');
+		</script>
+	<div id="sponsor-others" class="hidden"></div>
+    <footer>
+        <div class="container" style="margin:auto;width:50%;padding:20px;text-align:center;">
+           
+            <div class="col-sm-4 copyright" itemscope="" itemtype="http://schema.org/Organization"></div>
+            <a itemprop="url" href="/">
+            <img itemprop="logo" src="./img/22.png" alt="Thanlong - Võ Thành Nhân" style="width:auto;height: auto;">
+            </a>
+            <div class="mrt10">           
+            <p>
+            2021 ©  Thành Nhân - All Right Reserved.
+            </p>      
+            </div>
+
+                
+                <nav>
+                    <h4>Liên hệ</h4>
+                        <a href="https://www.facebook.com/vtnlord" target="_blank" style="border: solid 1px #ddd;padding: 5px;white-space: nowrap;border-radius: 4px;color: #fff;text-decoration: none;color: #bbb;font-size: 14px;">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>&emsp;
+                        <a href="mailto:vonhan872@gmail.com" style="border: solid 1px #ddd;padding: 5px;white-space: nowrap;border-radius: 4px;color: #fff;text-decoration: none;color: #bbb;font-size: 14px;">
+                            <i class="far fa-envelope"></i>
+                        </a>&emsp;
+                        <a href="https://zalo.me/0353415885" target="_blank" style="border: solid 1px #ddd;padding: 5px;white-space: nowrap;border-radius: 4px;color: #fff;text-decoration: none;color: #bbb;font-size: 14px;">
+                            <span>Zalo</span>
+                        </a>&emsp;
+                        <a href="https://github.com/thanlong" target="_blank" style="border: solid 1px #ddd;padding: 5px;white-space: nowrap;border-radius: 4px;color: #fff;text-decoration: none;color: #bbb;font-size: 14px;">                            
+                        <i class="fab fa-github-square"></i>
+                        </a>&emsp;             
+                        <a href="https://discordapp.com/users/694068328720760833/" target="_blank" style="border: solid 1px #ddd;padding: 5px;white-space: nowrap;border-radius: 4px;color: #fff;text-decoration: none;color: #bbb;font-size: 14px;">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </ul>
+                </nav>
+                <br>
+                <a href="https://mynickname.com/id1728586"><img src="https://mynickname.com/img.php?nick=vtnlord&sert=26&text=t8" alt="My nickname is vtnlord" /></a>
+            </div>
+            
+    </footer>
+
+
+</body>
+</html>
