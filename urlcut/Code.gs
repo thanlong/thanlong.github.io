@@ -1,7 +1,7 @@
 function doGet(e) {
   var type1 = e.parameter.type;
   if (type1 == '1') {
-    var sheets = SpreadsheetApp.openById('<IDsheet>').getActiveSheet();
+    var sheets = SpreadsheetApp.openById('1RVif07-lI-e8gyk8_TMpNrlABnEu5AHVJaxy0bMNFR0').getActiveSheet();
     var jo = {};
     var arrays = [];
     var rows = sheets.getRange(2, 1, sheets.getLastRow(), sheets.getLastColumn()).getValues();
@@ -16,7 +16,7 @@ function doGet(e) {
     return ContentService.createTextOutput(result).setMimeType(ContentService.MimeType.JSON);
   
   } else if (type1 == '2') {
-    var sheets = SpreadsheetApp.openById('<IDsheet>').getActiveSheet();
+    var sheets = SpreadsheetApp.openById('1RVif07-lI-e8gyk8_TMpNrlABnEu5AHVJaxy0bMNFR0').getActiveSheet();
     var url1 = e.parameter.url;
     var results = '';
     var rows = sheets.getRange(2, 1, sheets.getLastRow(), sheets.getLastColumn()).getValues();
@@ -43,7 +43,7 @@ function doGet(e) {
         dem += 1;
       }
     }
-    var sheets = SpreadsheetApp.openById('<IDsheet>').getActiveSheet();
+    var sheets = SpreadsheetApp.openById('1RVif07-lI-e8gyk8_TMpNrlABnEu5AHVJaxy0bMNFR0').getActiveSheet();
     sheets.appendRow([code, realURL]);
     return ContentService.createTextOutput(code);
   }
@@ -57,7 +57,7 @@ function getRandomInt(min, max) {
 }
 
 function checkHave(code) {
-  var sheets = SpreadsheetApp.openById('<IDsheet>').getActiveSheet();
+  var sheets = SpreadsheetApp.openById('1RVif07-lI-e8gyk8_TMpNrlABnEu5AHVJaxy0bMNFR0').getActiveSheet();
   var results = 0;
   var rows = sheets.getRange(2, 1, sheets.getLastRow(), sheets.getLastColumn()).getValues();
   for (var i = 0, l = rows.length; i < l; i++ ) {
