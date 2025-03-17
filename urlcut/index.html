@@ -140,7 +140,7 @@
             var url = new URL(url_string);
             var code = url.searchParams.get("i");
             $.ajax({
-                url: 'https://script.google.com/macros/s/AKfycbzFwXymdAusWBrFQcyWDOTDL3ZNLAxlIlLWvZfuVxBsbAvxbUvktRtmevyGzuxFhVVx/exec?type=2&url=' + code,
+                url: 'https://script.google.com/macros/s/AKfycby5CqJHqdF3-nAM622fiW-7IO7tVo5SH-WAdJtrYUEvKbJQT70mGRfsXv5MmUvpYHDT/exec?type=2&url=' + code,
                 type: 'GET',
                 success: function(resp){
                     if ( (resp.length > 1) && (resp.includes("http")) ) {
