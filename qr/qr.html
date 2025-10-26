@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hồ sơ cá nhân</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('your-background.jpg') center/cover no-repeat fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .overlay {
+    position: fixed;
+    inset: 0;
+    backdrop-filter: blur(15px);
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(to bottom, #000 40%, #222 100%);
+    border-radius: 28px;
+    width: 90%;
+    max-width: 420px;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    padding: 20px 0 30px;
+  }
+
+  .avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 3px solid #1da1f2;
+    object-fit: cover;
+    margin-top: 10px;
+  }
+
+  h1 {
+    margin: 12px 0 20px;
+    font-size: 24px;
+  }
+
+  h1 a {
+    color: #1da1f2;
+    text-decoration: none;
+  }
+
+  h1 a:hover {
+    color: #0a84d8;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .social-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .social-item a {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-item img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    transition: transform 0.2s;
+  }
+
+  .social-item a:hover img {
+    transform: scale(1.1);
+  }
+
+  .social-item span {
+    margin-top: 6px;
+    font-size: 14px;
+    color: #ddd;
+  }
+
+  .social-item span strong {
+    color: #1da1f2;
+  }
+</style>
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<div class="container">
+  <div class="info">
+    <img src="/assets/img/logo.png" alt="Avatar" class="avatar" />
+    <h1><a href="/index.html" target="_blank">VÕ THÀNH NHÂN</a></h1>
+
+    <div class="social">
+      <div class="social-item">
+        <a href="tel:+84353415885"><img src="/qr/img/mobile.png" alt="Phone" /></a>
+        <span><strong>Điện thoại:</strong> 0353 415 885</span>
+      </div>
+
+      <div class="social-item">
+        <a href="https://www.facebook.com/thanlong2k1/" target="_blank"><img src="/qr/img/facebook.png" alt="Facebook" /></a>
+        <span><strong>Facebook:</strong> Võ Thành Nhân</span>
+      </div>
+
+      <div class="social-item">
+        <a href="https://zaloapp.com/qr/p/mh0cmavo8jig" target="_blank"><img src="/qr/img/zalo.svg" alt="Zalo" /></a>
+        <span><strong>Zalo:</strong> 0901 234 567</span>
+      </div>
+
+      <div class="social-item">
+        <a href="mailto:vonhan872@gmail.com"><img src="/qr/img/gmail.png" alt="Gmail" /></a>
+        <span><strong>Email:</strong> vonhan872@gmail.com</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
