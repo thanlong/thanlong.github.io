@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Thành Nhân</title>
 <!-- Favicons -->
-  <link href="/assets/img/favicon.png" rel="icon">
+<link href="/assets/img/favicon.png" rel="icon">
 <style>
   * {
     box-sizing: border-box;
@@ -107,6 +107,7 @@
     color: #1da1f2;
   }
 </style>
+
 <!-- =======================================================
     ANTI F12
     ======================================================== -->
@@ -159,6 +160,39 @@
 
 </head>
 <body>
+  <header>
+    <nav class="container">
+      <a >
+        <style>
+        :root{--primary-color:#fd7d00}
+        header.bg-cover::before{background:#202!important}
+        #banner-logo{filter:hue-rotate(145deg)!important}
+        #ghost{
+          pointer-events:none;
+          background-image:url(/qr/img/ghost.svg);
+          background-size:100%;
+          background-repeat:no-repeat;
+          background-position:50%;
+          filter:drop-shadow(2px 4px 6px black);
+          height:30px;
+          width:30px;
+          position:fixed;
+          bottom:8px;
+          animation:ghost-animation 300s linear infinite
+        }
+        @keyframes ghost-animation{
+          0%{right:calc(100% - 8px);transform:scaleX(1)}
+          49%{transform:scaleX(1)}
+          50%{right:8px;transform:scaleX(-1)}
+          99%{transform:scaleX(-1)}
+          100%{right:calc(100% - 8px);
+          transform:scaleX(1)}}
+          </style>
+          <div id="ghost"></div>
+        </a>
+      </nav>
+    </header>
+<div id="ghost"></div>
 
 <div class="overlay"></div>
 
